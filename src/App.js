@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import Juego from './Component/Juego.js';
 
 function App() {
+  /*
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +20,12 @@ function App() {
         </a>
       </header>
     </div>
+  );*/
+  return(
+    
+      
+      <Juego />
+    
   );
 }
 
