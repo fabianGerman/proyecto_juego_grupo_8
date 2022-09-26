@@ -23,15 +23,19 @@ function comparar(a,b){
     }else{
         if((a+b) % 2 === 0){//gana piedra
             if(Players[0].opcion == 3){
-                console.log("gana jugador 1");
+                Players[0].puntaje++;
+                console.log("gana jugador 1"+"-Puntaje: "+Players[0].puntaje++);
             }else{
-                console.log("gana jugador 2");
+                console.log("gana jugador 2"+"-Puntaje: "+Players[1].puntaje++);
+                Players[1].puntaje++;
             }
         }else if((a+b) % 2 == 1){ //gana tijera o gana papel
             if(Players[0].opcion == 1 || Players[0].opcion == 3){
-                console.log("gana jugador 1");
+                console.log("gana jugador 1"+"-Puntaje: "+Players[0].puntaje++);
+                Players[0].puntaje++;
             }else{
-                console.log("gana jugador 2");
+                console.log("gana jugador 2"+"-Puntaje: "+Players[1].puntaje++);
+                Players[1].puntaje++;
             }
         }
     }
