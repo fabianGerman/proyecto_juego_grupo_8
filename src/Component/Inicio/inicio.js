@@ -14,7 +14,7 @@ function Inicio() {
       <h1>Piedra, Papel o Tijera</h1>
       <br></br>
       <div className="text-center">
-        <Button>
+        <Button onClick={() => navigate("/Game")} variant='primary'>
           Jugar
         </Button>
         <br></br><br></br>
