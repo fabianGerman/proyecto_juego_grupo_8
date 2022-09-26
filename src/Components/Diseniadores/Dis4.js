@@ -1,7 +1,7 @@
 const Dis4 = () => {
     return(
         <div>
-            <h1>HOLA soy Miguel</h1>
+            <h1>HOLA soy Zenteno Miguel</h1>
         </div>
     )
 }

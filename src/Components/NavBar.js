@@ -6,8 +6,10 @@ import { NavBar, Nav, Conteiner } from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route, Link, Outlet} from "react-router-dom";
 //import { Outlet, Link } from 'react-router-dom';
 import Dis1 from './Diseniadores/Dis1';
+import { useNavigate } from 'react-router-dom';
 
-const NavBarD = () => {
+const NavBarD = (props) => {
+  const navigate = useNavigate();
     return (
     <>
           <Card>
@@ -42,7 +44,7 @@ const NavBarD = () => {
               </section>
               </Card.Body>
               <Card.Footer>
-                <Button variant='primary'>VOLVER</Button>
+                <Button onClick={() => navigate("/Dis1")} variant='primary'>VOLVER</Button>
               </Card.Footer>
           </Card>
           </>

@@ -1,7 +1,7 @@
 const Dis3 = () => {
     return(
         <div>
-            <h1>HOLA soy Fabian</h1>
+            <h1>HOLA soy Ontiveros Fabian</h1>
         </div>
     )
 }

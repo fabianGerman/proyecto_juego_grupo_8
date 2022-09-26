@@ -1,7 +1,7 @@
 const Dis6 = () => {
     return(
         <div>
-            <h1>HOLA soy Fabricio</h1>
+            <h1>HOLA soy Espada Fabricio</h1>
         </div>
     )
 }
