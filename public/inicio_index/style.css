@@ -1,0 +1,23 @@
+body{
+    background: #12d4aa;
+}
+
+header{
+    text-align: center;
+    padding: 40px;
+    font-size: 35px;
+
+
+
+}
+
+.resultado{
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.opciones{
+    text-align: center;
+    margin: 50px 0;
+}
