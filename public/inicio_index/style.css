@@ -1,5 +1,6 @@
 body{
     background: #12d4aa;
+    
 }
 
 header{
@@ -21,3 +22,22 @@ header{
     text-align: center;
     margin: 50px 0;
 }
+.boton1{
+    font-size: 20px;
+    height: 28px;
+    width: 115px;
+    margin: 150px;
+}
+.boton2{
+    font-size: 20px;
+    height: 28px;
+    width: 115px;
+    margin: 150px;
+}
+.boton3{
+    font-size: 20px;
+    height: 28px;
+    width: 115px;
+    margin: 150px;
+}
+
