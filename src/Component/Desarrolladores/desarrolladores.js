@@ -1,63 +1,72 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
-import fondo from '../img/fondogris.png';
 import Img from 'react-bootstrap/image';
+import { useNavigate } from "react-router-dom";
+import Esteban from '../img/Esteban.png';
+import Sergio from '../img/Sergio.png';
+import Miguel from '../img/Miguel.jpg';
+import Atilio from '../img/Atilio.jpg';
+import Fabian from '../img/German.png';
+import Nicolas from '../img/Nicolas.jpg';
 
-class Desarrolladores extends React.Component{
-    render(){
-        return <>
-        <Button variant="secondary" size="sm">
-          Regresar al Menú
-        </Button>
+function Desarrolladores() {
+    const navigate = useNavigate();
+    return (
+        <>
+            <br></br>
+            <div>
+                <Button onClick={() => navigate("/")} size="sm">
+                    Regresar al Inicio
+                </Button>
+            </div>
+            <br></br>
             <Carousel className="text-center">
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-                    <Carousel.Caption>
-                        <h3>Altamirano Atilio Salvador</h3>
-                        <p>Página de Desarrolladores</p>
+                    <Img src={Atilio} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Altamirano Atilio Salvador</h1>
+                        <p>Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-
-                    <Carousel.Caption>
-                        <h3>Tapia Sergio Dario</h3>
-                        <p>Página de Desarrolladores</p>
+                    <Img src={Sergio} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Tapia Sergio Dario</h1>
+                        <p>Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-
-                    <Carousel.Caption>
-                        <h3>Ontiveros Fabian</h3>
-                        <p>Página de Juego</p>
+                    <Img src={Fabian} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Ontiveros Germán Jonatan Fabian</h1>
+                        <p>Líder - Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-                    <Carousel.Caption>
-                        <h3>Masquez Nicolás</h3>
-                        <p>Imágenes</p>
+                    <Img src={Nicolas} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Masquez Nicolás Alejandro</h1>
+                        <p>Diseñador Gráfico - Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-                    <Carousel.Caption>
-                        <h3>Espada Esteban Fabricio</h3>
-                        <p>Página Index</p>
+                    <Img src={Esteban} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Espada Esteban Fabricio</h1>
+                        <p>Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Img src={fondo} style={{ width: '50%' }} />
-                    <Carousel.Caption>
-                        <h3>Zenteno Miguel Angel</h3>
-                        <p>Página Index</p>
+                    <Img src={Miguel} style={{ width: '50%' }} />
+                    <Carousel.Caption className="text-dark">
+                        <h1>Zenteno Miguel Angel</h1>
+                        <p>Desarrollador</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-      </>
-    }
+        </>
+    );
 }
 
 export default Desarrolladores;
