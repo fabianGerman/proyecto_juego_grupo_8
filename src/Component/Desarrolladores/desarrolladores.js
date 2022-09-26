@@ -3,12 +3,12 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Img from 'react-bootstrap/image';
 import { useNavigate } from "react-router-dom";
-import Esteban from '../img/Esteban.png';
-import Sergio from '../img/Sergio.png';
-import Miguel from '../img/Miguel.jpg';
-import Atilio from '../img/Atilio.jpg';
-import Fabian from '../img/German.png';
-import Nicolas from '../img/Nicolas.jpg';
+import Esteban from '../Img/Esteban.png';
+import Sergio from '../Img/Sergio.png';
+import Miguel from '../Img/Miguel.jpg';
+import Atilio from '../Img/Atilio.jpg';
+import Fabian from '../Img/German.png';
+import Nicolas from '../Img/Nicolas.jpg';
 
 function Desarrolladores() {
     const navigate = useNavigate();

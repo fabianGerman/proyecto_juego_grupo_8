@@ -3,6 +3,7 @@ import Imagen from 'react-bootstrap/Image';
 import Pregunta from '../Img/pregunta.png';
 import imgData from "../Img/ImgData";
 import Players from './PlayerData';
+import { useNavigate } from "react-router-dom";
 import './style.css';
 
 
@@ -25,6 +26,7 @@ function comparar(a,b){
             if(Players[0].opcion == 3){
                 Players[0].puntaje++;
                 console.log("gana jugador 1"+"-Puntaje: "+Players[0].puntaje++);
+                
             }else{
                 console.log("gana jugador 2"+"-Puntaje: "+Players[1].puntaje++);
                 Players[1].puntaje++;
@@ -43,12 +45,16 @@ function comparar(a,b){
 }
 
 const Numbers = () => {   
+    const navigate = useNavigate();
     return(
         <>
+            <Button onClick={() => navigate("/")} size="sm">
+                    Regresar al Inicio
+            </Button>
             <div className='estilo'>
-                <Imagen id="id1" src={Pregunta} style={{width: '10%'}}/>
+                <Imagen id="id1" src={Pregunta} style={{width: '20%'}}/>
                 <Button onClick={randomImg} variant="outline-primary">Gerar Número</Button>{''}
-                <Imagen id="id2" src={Pregunta} style={{width: '10%'}}/>    
+                <Imagen id="id2" src={Pregunta} style={{width: '20%'}}/>    
             </div>
             
         </>

@@ -2,7 +2,7 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 import Img from 'react-bootstrap/image';
-import portada from '../img/portada01.jpg'
+import portada from '../Img/portada01.jpg'
 
 function Inicio() {
   const navigate = useNavigate();
